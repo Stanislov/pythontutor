@@ -1,0 +1,29 @@
+i1 = int(input())
+
+i2 = int(input())
+
+i3 = int(input())
+
+i4 = int(input())
+
+i5 = int(input())
+
+i6 = int(input())
+
+i7 = int(input())
+
+i8 = int(input())
+
+i9 = int(input())
+
+i10 = int(input())
+
+
+
+sum=0
+
+for i in i1, i2, i3, i4, i5, i6, i7, i8, i9, i10:
+
+	sum += i
+
+print(sum)

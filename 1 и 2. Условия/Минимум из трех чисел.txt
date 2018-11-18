@@ -1,0 +1,13 @@
+t1 = int(input())
+
+t2 = int(input())
+
+t3 = int(input())
+
+
+if t1>=t2 and t3>=t2: m=t2
+elif t3>=t1 and t2>=t1: m=t1
+
+elif t1>=t3 and t2>=t3: m=t3
+
+print ("Минимальное из трех чисел", m)

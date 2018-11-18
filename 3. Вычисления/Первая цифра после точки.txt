@@ -1,0 +1,3 @@
+x = float(input())
+f = str(int(x*10)%10)
+print (f)
