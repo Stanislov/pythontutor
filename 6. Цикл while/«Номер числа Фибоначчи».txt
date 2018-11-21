@@ -1,0 +1,52 @@
+﻿'''
+«Номер числа Фибоначчи»
+Условие
+Дано натуральное число A. Определите, каким по счету числом Фибоначчи оно является, то есть выведите такое число n, что φn = A. Если А не является числом Фибоначчи, выведите число -1.
+'''
+
+n=int(input())
+
+i=0
+
+j1=0
+
+j2=0
+z=0
+
+
+while j2 <= n+1:
+
+    if j1==0: j1+=1
+
+    else: j1, j2 = j2, j1+j2
+
+    i+=1
+    
+    if j2!=n: z=-1
+    else:
+	z=i-1
+	if z==1: z+=1
+	break
+
+
+print(z)
+ 
+
+'''
+Шаблон
+a = int(input())
+if a == 0:
+    print(0)
+else:
+    fib_prev, fib_next = 0, 1
+    n = 1
+    while fib_next <= a:
+        if fib_next == a:
+            print(n)
+            break
+        fib_prev, fib_next = fib_next, fib_prev + fib_next
+        n += 1
+    else:
+        print(-1)
+'''   
+    
