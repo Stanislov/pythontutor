@@ -1,0 +1,15 @@
+﻿'''
+«Переставить min и max»
+Условие
+В списке все элементы различны. Поменяйте местами минимальный и максимальный элемент этого списка.
+'''
+
+a = [int(s) for s in input().split()]
+
+b=a.index(max(a))
+c=a.index(min(a))
+a[b], a[c] = a[c], a[b]
+        
+for elem in a:
+    print(elem, end=' ')
+
