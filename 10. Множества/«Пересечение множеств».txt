@@ -1,0 +1,18 @@
+﻿'''
+«Пересечение множеств»
+Условие
+Даны два списка чисел. Найдите все числа, которые входят как в первый, так и во второй список и выведите их в порядке возрастания.
+
+Примечание. И даже эту задачу на Питоне можно решить в одну строчку.
+'''
+
+A = {int(i) for i in input().split()}
+B = {int(i) for i in input().split()}
+
+a = A.intersection(B)
+a = sorted(a)
+for num in a:
+    
+    print(num, end = ' ')
+
+# print(*sorted(set(input().split()) & set(input().split()), key=int))
