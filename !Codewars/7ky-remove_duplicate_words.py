@@ -3,6 +3,9 @@
 ''' Самый короткий вариант
 def remove_duplicate_words(s):
     return ' '.join(sorted(set(s.split()), key = s.index))
+
+    Или
+    return ' '.join(OrderedDict.fromkeys(s.split()))
 '''
 
 def remove_duplicate_words(s):
